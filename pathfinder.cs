@@ -1,3 +1,19 @@
+class HallwayState
+{
+    public (int, int) start;
+    public (int, int) end;
+    public bool entranceDoor;
+    public bool exitDoor;
+
+    public HallwayState((int, int) start, (int, int) end, bool entranceDoor, bool exitDoor)
+    {
+        this.start = start;
+        this.end = end;
+        this.entranceDoor = entranceDoor;
+        this.exitDoor = exitDoor;
+    }
+}
+
 private Tuple<int, int>[] GetNeighbors(int row, int column, int size = 1)
 {
     Tuple<int, int>[] cells = new Tuple<int, int>[8]
